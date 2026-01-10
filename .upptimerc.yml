@@ -45,7 +45,21 @@ status-website:
       article.link a::after { display: none !important; }
       article a { pointer-events: none !important; }
       .tag { border-radius: 9999px !important; font-weight: 500 !important; }
+      /* Keep incident links clickable */
+      article.down-active a { pointer-events: auto !important; cursor: pointer !important; }
     </style>
+    <script>
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href*="/incident/"]');
+        if (link) {
+          e.preventDefault();
+          var match = link.href.match(/\/incident\/(\d+)/);
+          if (match) {
+            window.open('https://github.com/hometrace-apps/status/issues/' + match[1], '_blank');
+          }
+        }
+      });
+    </script>
 
 assignees:
   - nickrroberts
