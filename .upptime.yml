@@ -1,0 +1,26 @@
+owner: hometrace-apps
+repo: status
+
+sites:
+  - name: Website
+    url: https://www.hometrace.co
+  - name: API
+    url: https://www.hometrace.co/api/health
+  - name: Preview
+    url: https://preview.hometrace.co
+
+status-website:
+  cname: status.hometrace.co
+  baseUrl: /
+  name: Hometrace Status
+
+assignees:
+  - nickrroberts
+
+workflowSchedule:
+  uptime: "*/30 * * * *"
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
