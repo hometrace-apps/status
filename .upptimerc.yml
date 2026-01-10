@@ -6,12 +6,12 @@ sites:
   - name: Homepage
     url: https://www.hometrace.co
     icon: home
-  - name: Login Page
-    url: https://www.hometrace.co/auth/login
+  - name: Sign In
+    url: https://www.hometrace.co/auth/signin
     icon: key
-  - name: Inspector Dashboard
-    url: https://www.hometrace.co/inspector/dashboard
-    icon: layout
+  - name: Sign Up
+    url: https://www.hometrace.co/auth/signup
+    icon: user-plus
 
   # API - Core Health
   - name: API Health
