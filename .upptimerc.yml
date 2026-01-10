@@ -23,7 +23,7 @@ sites:
 
 status-website:
   cname: status.hometrace.co
-  baseUrl: /
+  baseUrl: ""
   name: Hometrace Status
   logoUrl: https://www.hometrace.co/hometrace.svg
   favicon: https://www.hometrace.co/favicon.ico
