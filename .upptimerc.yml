@@ -21,21 +21,6 @@ sites:
     url: https://www.hometrace.co/api/storage/health
     icon: database
 
-  # API - Public Services
-  - name: Places API
-    url: https://www.hometrace.co/api/places/autocomplete?input=test
-    icon: map-pin
-  - name: Status Banner
-    url: https://www.hometrace.co/api/status/banner
-    icon: bell
-
-  # Preview Environment
-  - name: Preview
-    url: https://preview.hometrace.co
-    icon: eye
-    headers:
-      - "x-vercel-protection-bypass: $VERCEL_BYPASS_TOKEN"
-
 status-website:
   cname: status.hometrace.co
   baseUrl: /
@@ -56,7 +41,9 @@ status-website:
       nav .container { max-width: 900px; }
       .container { max-width: 900px; }
       header img { height: 48px !important; width: auto !important; }
-      article { border-radius: 12px !important; }
+      article { border-radius: 12px !important; cursor: default !important; }
+      article.link a::after { display: none !important; }
+      article a { pointer-events: none !important; }
       .tag { border-radius: 9999px !important; font-weight: 500 !important; }
     </style>
 
