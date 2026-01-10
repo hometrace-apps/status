@@ -8,6 +8,8 @@ sites:
     url: https://www.hometrace.co/api/health
   - name: Preview
     url: https://preview.hometrace.co
+    headers:
+      - "x-vercel-protection-bypass: $VERCEL_BYPASS_TOKEN"
 
 status-website:
   cname: status.hometrace.co
