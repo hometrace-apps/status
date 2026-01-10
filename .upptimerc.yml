@@ -2,12 +2,37 @@ owner: hometrace-apps
 repo: status
 
 sites:
-  - name: Website
+  # Website
+  - name: Homepage
     url: https://www.hometrace.co
-  - name: API
+    icon: home
+  - name: Login Page
+    url: https://www.hometrace.co/auth/login
+    icon: key
+  - name: Inspector Dashboard
+    url: https://www.hometrace.co/inspector/dashboard
+    icon: layout
+
+  # API - Core Health
+  - name: API Health
     url: https://www.hometrace.co/api/health
+    icon: activity
+  - name: Storage Health
+    url: https://www.hometrace.co/api/storage/health
+    icon: database
+
+  # API - Public Services
+  - name: Places API
+    url: https://www.hometrace.co/api/places/autocomplete?input=test
+    icon: map-pin
+  - name: Status Banner
+    url: https://www.hometrace.co/api/status/banner
+    icon: bell
+
+  # Preview Environment
   - name: Preview
     url: https://preview.hometrace.co
+    icon: eye
     headers:
       - "x-vercel-protection-bypass: $VERCEL_BYPASS_TOKEN"
 
